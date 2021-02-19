@@ -1,4 +1,4 @@
-package Exercises;
+package ExercisesJava;
 
 public class CostructorExample {
     public static void main(String args[]){

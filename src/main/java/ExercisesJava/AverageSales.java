@@ -1,4 +1,4 @@
-package Exercises;
+package ExercisesJava;
 
 public class AverageSales {
     public static void main(String[] args) {
