@@ -6,6 +6,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.File;
+import java.util.concurrent.TimeUnit;
 /*
 * Class InitialSetup
 *
@@ -13,26 +14,27 @@ import java.io.File;
 *  This class contains mehods to select a correct selenium driver depends of operating
 *  system (MacOS, Windows 10) and used web explorer (chrome, edge, firefox)
 *
-* @author Alberto Picasso (Software Technical Test Lead)
-* @version 1.0
-*
 *  Explorer keys
 *    chrome
 *    firefox
 *    edge
+*
+* @author Alberto Picasso (Software Technical Test Lead)
+* @version 1.0
+*
 * */
 
 public class InitialSetup {
     //Class's variables to save tipe of explorer and time to set the implicit wait
     //private WebDriver driver;
     private String explorer;
-    private int implicitWatTime;
+    //private int implicitWatTime;
 
     //Constructor user as a setter to get explorer and implicitwait
-    public InitialSetup(String explorer, int implicitWatTime){
+    public InitialSetup(String explorer){
         //this.driver = myDriver;
         this.explorer = explorer;
-        this.implicitWatTime = implicitWatTime;
+        //this.implicitWatTime = implicitWatTime;
     }
 
     /*
@@ -88,5 +90,9 @@ public class InitialSetup {
             }
         }
         return null;
+    }
+
+    public void setExplicitWait(WebDriver myDriver, int time){
+        myDriver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
     }
 }
