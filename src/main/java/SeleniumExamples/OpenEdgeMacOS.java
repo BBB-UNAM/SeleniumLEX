@@ -14,7 +14,7 @@ public class OpenEdgeMacOS {
 
         driver.get("https://www.google.com");
 
-        //Thread.sleep(500);
+        Thread.sleep(500);
         driver.close(); //close web browser
         driver.quit(); //Close java Thread
     }
