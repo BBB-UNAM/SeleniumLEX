@@ -15,9 +15,9 @@ import java.util.concurrent.TimeUnit;
 *  system (MacOS, Windows 10) and used web explorer (chrome, edge, firefox)
 *
 *  Explorer keys
-*    chrome
-*    firefox
-*    edge
+*    *chrome
+*    *firefox
+*    *edge
 *
 * @author Alberto Picasso (Software Technical Test Lead)
 * @version 1.0
