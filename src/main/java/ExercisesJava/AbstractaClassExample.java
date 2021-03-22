@@ -9,12 +9,17 @@ public class AbstractaClassExample {
         System.out.println(c.area());
         System.out.println(r.area());
         System.out.println(t.area());
+        System.out.println(t.Hola());
 
     }
 }
 
 abstract class FiguraGeometrica {
     public abstract double area();
+
+    public String Hola(){
+        return "Hola mondo";
+    }
 }
 
 class Rectangulo extends FiguraGeometrica{
